@@ -7,13 +7,12 @@
   <title>JustSayWeb</title>
   <link rel="icon" type="image/gif" href="images/favicon.ico">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link href='http://fonts.googleapis.com/css?family=Fira+Sans&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main_.css">
-  <link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
   <script src="script.js"></script>
-
 
 </head>
 
@@ -23,26 +22,26 @@
     </div>
     <div class="social_btn">
       <ul>
-        <li class="social_btn-vk"><a href='http://vk.com/saiwhite'><i class="fa fa-vk"></i></a>
+        <li class="social_btn-vk"><a href='http://vk.com/saiwhite' target="_blank"><i class="fa fa-vk"></i></a>
         </li>
-        <li class="social_btn-fb"><a href='https://www.facebook.com/SayzanaSaryglar91'><i class="fa fa-facebook"></i></a>
+        <li class="social_btn-fb"><a href='https://www.facebook.com/SayzanaSaryglar91' target="_blank"><i class="fa fa-facebook"></i></a>
         </li>
-        <li class="social_btn-google"><a href='https://plus.google.com/112328673497638835140/posts'><i class="fa fa-google"></i></a>
+        <li class="social_btn-google"><a href='https://plus.google.com/112328673497638835140/posts' target="_blank"><i class="fa fa-google"></i></a>
         </li>
-        <li class="social_btn-gthb"><a href='https://github.com/sayzana'><i class="fa fa-github"></i></a>
+        <li class="social_btn-gthb"><a href='https://github.com/sayzana' target="_blank"><i class="fa fa-github"></i></a>
         </li>
       </ul>
     </div>
   </header>
-  <div class="container">
+  <div class="container"  id='menu-tabs'>
     <aside class="sidebar">
-      <section id='menu-tabs' class="sidebar-menu">
+      <section class="sidebar-menu">
         <ul>
-          <li class="sidebar_menu-item active"><a href='#menu-item1'>Обо мне</a>
+          <li class="sidebar_menu-item active"><a href='#menu-item1' class="tabs-control-link">Обо мне</a>
           </li>
-          <li class="sidebar_menu-item default"><a href='#menu-item2'>Мои работы</a>
+          <li class="sidebar_menu-item default"><a href='#menu-item2' class="tabs-control-link">Мои работы</a>
           </li>
-          <li class="sidebar_menu-item default"><a href='#menu-item3'>Связаться со мной</a>
+          <li class="sidebar_menu-item default"><a href='#menu-item3' class="tabs-control-link">Связаться со мной</a>
           </li>
         </ul>
       </section>
@@ -59,7 +58,7 @@
       </section>
     </aside>
     <div class="right-col">
-      <div id='menu-item1' class="section_info">
+      <div class="section_info menu-item menu-item-active">
         <section class="section_main-info section_css">
           <header class="section_main-title">Основная информация</header>
           <div>
@@ -116,7 +115,7 @@
           </ul>
         </section>
       </div>
-      <section id='menu-item2' class="section_main-works section_css">
+      <section class="section_main-works section_css menu-item">
         <header>Мои работы</header>
         <div>
           <figure>
@@ -140,7 +139,7 @@
           <p>Добавить проект</p>
         </div>
       </section>
-      <section id='menu-item3' class="feedback section_css">
+      <section class="feedback section_css menu-item">
         <header>У вас интересный проект? Напишите мне</header>
         <form action="" method="post">
           <label for='' class="feedback-label input-name">
@@ -172,6 +171,7 @@
   </footer>
 
   <script>
+    
   </script>
 
 </body>
