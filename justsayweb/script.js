@@ -1,3 +1,5 @@
+//tab для меню
+
 $(document).ready(function() {
 
 	$('.tabs-control-link').on('click', function(e) {
@@ -12,6 +14,10 @@ $(document).ready(function() {
 		    .addClass('menu-item-active')
 		    .siblings()
 		    .removeClass('menu-item-active');
+
+		item.addClass('active')
+		    .siblings()
+		    .removeClass('active');
 	});
 
 });
