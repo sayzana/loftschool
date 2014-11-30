@@ -120,6 +120,8 @@ url(fonts/elektra_light_pro-webfont.svg#elektra_light_proregular) format('svg');
   line-height:20px;
   color:#5c7b98;
   margin-bottom:20px;
+  margin-right: 20px;
+  text-align: justify;
 }
 @font-face{font-family:elektra_light_probold;src:url(fonts/font-webfont.eot);src:url(fonts/font-webfont.eot?#iefix) format('embedded-opentype'),
 url(fonts/font-webfont.woff2) format('woff2'),
@@ -758,6 +760,7 @@ url(fonts/elektra_light_pro-webfont.svg#elektra_light_proregular) format('svg');
 }
 .product__slideshow-display img {
   display:block;
+  width: 100%;
   position:absolute;
   top:0;
   left:0;
@@ -783,7 +786,7 @@ url(fonts/elektra_light_pro-webfont.svg#elektra_light_proregular) format('svg');
 .product__text {
   width:444px;
   float:right;
-  margin-right:243px;
+  margin-right:200px;
 }
 .product__slider-item {
   float:left
@@ -840,7 +843,7 @@ url(fonts/elektra_light_pro-webfont.svg#elektra_light_proregular) format('svg');
   line-height:16px;
   padding:8px 10px;
 }
-.product__text-table tr.colored {
+.product__text-table tr:nth-child(2n) {
   background:#eef2f4;
 }
 /*! normalize.css v1.1.3 | MIT License | git.io/normalize */
